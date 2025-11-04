@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #202020;
-    color: white;
+    color: lightpink;
     min-height: 300vh;
   }
  
@@ -10,7 +10,7 @@ body {
   h1 {
     margin: 20px 0;
     font-size: 32px;
-    color: white;
+    color: lightpink;
   }
  
   table {
@@ -80,7 +80,9 @@ header{
   a {
     text-decoration: none;
   }
+
     
+
 
  
   .et-hero-tab {
