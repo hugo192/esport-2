@@ -4,6 +4,10 @@
     box-sizing: border-box;
   }
 
+  p{
+    text-align: center;
+  }
+
 header{
   text-align: center;
 }
