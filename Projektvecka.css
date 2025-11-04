@@ -17,6 +17,16 @@ header{
   a {
     text-decoration: none;
   }
+
+  .textruta{
+    position: absolute;
+    height: 350px;
+    width: 200px;
+    background: linear-gradient(-45deg, #d36ae1, #a078ef, #7d75ee, #b4d0fd, #daf4ff, #ededed);
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+}
  
   .et-hero-tab {
     display: flex;
