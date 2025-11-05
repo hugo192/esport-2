@@ -35,6 +35,21 @@ body {
     object-fit: cover; 
     max-height: 500px; 
   }
+
+.page-title{
+  display:inline-block;      /* so the box hugs the text */
+  padding: .6rem 1.2rem;
+  border: 4px solid #ff7eb3; /* your pink */
+  border-radius: 14px;       /* softer corners */
+  background: #fff;          /* optional, remove if you only want a border */
+  color:#ff7eb3;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  letter-spacing:.06em;
+}
+header, .title-wrap{
+  text-align:center;         /* center the box on the page */
+  margin: 24px 0;
+}
  
 
 
