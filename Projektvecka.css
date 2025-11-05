@@ -107,9 +107,9 @@ header{
 
   body {
     font-family: "Century Gothic", 'Lato', sans-serif;
-    background: #f5f5f5;
+    background: hsla(207, 42%, 45%, 0.523);
     min-height: 300vh;
-    color: lightpink;
+    color: rgb(5, 3, 3);
   }
 
  
