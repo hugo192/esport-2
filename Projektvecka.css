@@ -21,6 +21,15 @@ color:var(--ink); background:radial-gradient(1200px 600px at 15% 10%, var(--bg1)
 radial-gradient(1200px 600px at 85% 90%, var(--bg2), #fff6eb);
 }
 
+#logga{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 80px;
+  height: auto;
+  z-index: 1000;
+}
+
 button{
   color: white;
 }
