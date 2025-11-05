@@ -84,15 +84,28 @@ button{
     max-height: 500px; 
   }
 
-.page-title{
-  display:inline-block;      /* so the box hugs the text */
-  padding: .6rem 1.2rem;
-  border: 4px solid #ff7eb3; /* your pink */
-  border-radius: 14px;       /* softer corners */
-  background: #fff;          /* optional, remove if you only want a border */
-  color:#ff7eb3;
-  box-shadow: 0 8px 24px rgba(0,0,0,.08);
-  letter-spacing:.06em;
+.page-title {
+  display: inline-block;
+  padding: .6rem 1.4rem;
+  border-radius: 14px;
+  background: #232323;
+  color: #ededed;
+  border: 1px solid #ffffff22;
+  box-shadow:
+  0 6px 20px #ffffff3a inset,
+  0 2px 0 #ffffff1a inset,
+  0 8px 24px rgba(28, 28, 28, 0.4);
+  letter-spacing: 0.6rem;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  transition: .2s transform, .2s box-shadow;
+}
+
+.page-title:hover{
+  transform: translateY(-2px);
+  box-shadow: 
+  0 6px 20px #ffffff55 inset
+  0 2px 0 #ffffff2a inset
+  0 10px 28px rgba(28, 28, 28, 0.6);
 }
 header, .title-wrap{
   text-align:center;         /* center the box on the page */
@@ -154,6 +167,16 @@ button{
 
 header{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+nav button{
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
 }
  
 
