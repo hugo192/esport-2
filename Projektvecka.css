@@ -21,15 +21,28 @@ color:var(--ink); background:radial-gradient(1200px 600px at 15% 10%, var(--bg1)
 radial-gradient(1200px 600px at 85% 90%, var(--bg2), #000000);
 }
 
+#logga{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 80px;
+  height: auto;
+  z-index: 1000;
+}
+
 button{
+  position: fixed;
   color: white;
+  z-index: 1000;
 }
  
  
   h1 {
-    margin: 20px 0;
+    position: fixed;
+    margin: 20px -175px;
     font-size: 32px;
     color: lightpink;
+    z-index: 1000;
   }
  
   table {
