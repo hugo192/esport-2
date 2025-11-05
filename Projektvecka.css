@@ -38,6 +38,13 @@ button{
     border-collapse: separate;
     border-spacing: 20px;
   }
+
+  h4{
+    text-align: center;
+    color: white;
+  }
+
+  
  
   td {
     background: #2b2a2a;
@@ -106,7 +113,21 @@ button{
 
   p{
     text-align: center;
+    color: white;
+    line-height: 1.6;
   }
+
+  .glass-card {
+  background: rgba(255, 255, 255, 0.15); /* transparent white */
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);           /* main glass effect */
+  -webkit-backdrop-filter: blur(10px);   /* Safari support */
+  
+}
+
 
 header{
   text-align: center;
