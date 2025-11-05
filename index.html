@@ -66,7 +66,7 @@
       </td>
 
 
-      <td valign="top" align="center" width="33%">
+      <td valign="top" align="center" width="33%" onclick="toggleTextbox()">Öppna textbox>
         <a href="#">
           <img src="Spelare6.jpg" alt="Bild 6" width="100%" style="display:block;">
         </a>
@@ -91,5 +91,19 @@
 Detta är ett nytt kapitel för laget eftersom detta är deras första turnering tillsammans som ett lag. Våra styrkor som lag är våra individuella styrkor som spelare men hoppas på att bli bättre som lag under denna turnering.</p>
 </div>
 
+<div class="textbox-container" id="textbox">
+    <div class="textbox-header">
+        <h3>Skriv din text här</h3>
+        <button class="close-btn" onclick="toggleTextbox()">&times;</button>
+    </div>
+    <textarea placeholder="Börja skriva..."></textarea>
+</div>
+
+<script>
+    function toggleTextbox() {
+        const textbox = document.getElementById('textbox');
+        textbox.classList.toggle('show');
+    }
+</script>
 </body>
 </html>

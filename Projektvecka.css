@@ -192,7 +192,37 @@ nav button{
     text-decoration: none;
   }
 
-    
+  .textbox-container {
+    position: fixed;
+    bottom: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    max-width: 90%;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: right 0.4s ease-in-out;
+    z-index: 1000;
+}
+
+.textbox-container.show {
+    bottom: 20px;
+}
+
+.textbox-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.textbox-header h3 {
+    margin: 0;
+    color: #333;
+}
 
 
  
