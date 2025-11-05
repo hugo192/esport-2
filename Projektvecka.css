@@ -109,8 +109,9 @@ button{
 }
 header, .title-wrap{
   text-align:center;         /* center the box on the page */
-  margin: 24px 0;
+  margin: 44px 0;
 }
+
 
 button{
   color: white;
@@ -231,6 +232,9 @@ nav button{
   width: 550px;
   bottom: 20px;
   color: black;
+  -webkit-text-stroke: black;
+  text-stroke: black;
+  font-size: 16px;
 }
  
   .et-hero-tab {
