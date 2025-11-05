@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: lab(0% 0 0);
+    background: black !important;
     color: lightpink;
     min-height: 300vh;
   }
@@ -20,6 +20,10 @@ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Ar
 color:var(--ink); background:radial-gradient(1200px 600px at 15% 10%, var(--bg1), transparent 60%),
 radial-gradient(1200px 600px at 85% 90%, var(--bg2), #fff6eb);
 }
+
+button{
+  color: white;
+}
  
  
   h1 {
@@ -36,7 +40,7 @@ radial-gradient(1200px 600px at 85% 90%, var(--bg2), #fff6eb);
   }
  
   td {
-    background: #ff8dcc;
+    background: #2b2a2a;
     border-radius: 16px;
     padding: 20px;
     text-align: center;
