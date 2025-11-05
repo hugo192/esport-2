@@ -31,14 +31,18 @@ radial-gradient(1200px 600px at 85% 90%, var(--bg2), #fff6eb);
 }
 
 button{
+  position: fixed;
   color: white;
+  z-index: 1000;
 }
  
  
   h1 {
-    margin: 20px 0;
+    position: fixed;
+    margin: 20px -175px;
     font-size: 32px;
     color: lightpink;
+    z-index: 1000;
   }
  
   table {
