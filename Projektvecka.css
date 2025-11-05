@@ -199,7 +199,7 @@ nav button{
     transform: translateX(-1%);
     width: 600px;
     max-width: 90%;
-    height: 500px;
+    height: 520px;
     background: rgba(255, 255, 255, 0.15); /* transparent white */
     border-radius: 15px;
     padding: 20px;
@@ -227,7 +227,11 @@ nav button{
     color: #333;
 }
 
-
+.close-btn{
+  width: 550px;
+  bottom: 20px;
+  color: black;
+}
  
   .et-hero-tab {
     display: flex;
