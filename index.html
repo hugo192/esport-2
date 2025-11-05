@@ -12,7 +12,7 @@
   <div align="center">
     <h1 class="page-title">ESPORT TUNERING</h1>
     <div class="button group">
-      <button class="chip chip2" onclick='scrollToId("Om oss");'>Om oss</button>
+      <button class="chip2" onclick="scrollToId('Omoss')">Om oss</button>
     </div>
   </div>
   
@@ -102,6 +102,12 @@ Detta är ett nytt kapitel för laget eftersom detta är deras första turnering
         const textbox = document.getElementById('textbox');
         textbox.classList.toggle('show');
     }
+</script>
+
+<script>
+function scrollToId(id){
+const el = document.getElementById(id); if(!el) return; el.scrollIntoView({behavior:'smooth', block:'start'});
+}
 </script>
 </body>
 </html>

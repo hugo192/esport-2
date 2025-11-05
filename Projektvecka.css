@@ -6,9 +6,9 @@ body {
     min-height: 300vh;
   }
 
-  .chip{padding:8px 12px; border-radius:999px; background:var(--glass); border:1px solid #ffffff22; box-shadow:0 6px 20px #ffffff3a inset, 0 2px 0 #ffffff1a inset; transition:.2s transform,.2s background
+  .chip2{padding:8px 12px; border-radius:999px; background:var(--glass); border:1px solid #ffffff22; box-shadow:0 6px 20px #ffffff3a inset, 0 2px 0 #ffffff1a inset; transition:.2s transform,.2s background
 }
-.chip:hover{background:var(--glass-2); transform:translateY(-1px)}
+.chip2:hover{background:var(--glass-2); transform:translateY(-1px)}
 :root{
 --bg1:#000000; --bg2:#000000; --ink:#0f172a; --muted:#475569; --card:#000000cc; --ring:#00000010;
 --maxw:1100px; --radius:16px;
