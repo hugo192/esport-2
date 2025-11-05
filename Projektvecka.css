@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: lab(0% 0 0);
+    background: lab(0% 0 0) !important;
     color: lightpink;
     min-height: 300vh;
   }
@@ -10,7 +10,7 @@ body {
 }
 .chip:hover{background:var(--glass-2); transform:translateY(-1px)}
 :root{
---bg1:#f8ffd3; --bg2:#ffe7cc; --ink:#0f172a; --muted:#475569; --card:#ffffffcc; --ring:#00000010;
+--bg1:#000000; --bg2:#000000; --ink:#0f172a; --muted:#475569; --card:#000000cc; --ring:#00000010;
 --maxw:1100px; --radius:16px;
 }
 *{box-sizing:border-box}
@@ -18,7 +18,7 @@ html,body{height:100%}
 body{
 margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
 color:var(--ink); background:radial-gradient(1200px 600px at 15% 10%, var(--bg1), transparent 60%),
-radial-gradient(1200px 600px at 85% 90%, var(--bg2), #fff6eb);
+radial-gradient(1200px 600px at 85% 90%, var(--bg2), #000000);
 }
  
  
@@ -36,7 +36,7 @@ radial-gradient(1200px 600px at 85% 90%, var(--bg2), #fff6eb);
   }
  
   td {
-    background: #ff8dcc;
+    background: #2b2a2a;
     border-radius: 16px;
     padding: 20px;
     text-align: center;
