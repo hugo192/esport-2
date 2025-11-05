@@ -69,6 +69,10 @@ header, .title-wrap{
   text-align:center;         /* center the box on the page */
   margin: 24px 0;
 }
+
+button{
+  color: white;
+}
  
 
 
