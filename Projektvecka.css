@@ -30,12 +30,8 @@ radial-gradient(1200px 600px at 85% 90%, var(--bg2), #000000);
   z-index: 1000;
 }
 
-.chip1{
-right: 400px;
-top: 35px;
-}
 .chip2{
-right: 325px;
+right: 500px;
 top: 35px;
 }
 
