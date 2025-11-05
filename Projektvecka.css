@@ -114,6 +114,11 @@ button{
     font-size: 20px;
   }
  
+  .text-outline{
+   color:#000;                          /* fill */
+   -webkit-text-stroke: .06em #fff;     /* white outline */
+   text-stroke: .06em #fff;             /* future standard */
+}
  
   td p {
     color: #dddddd;
