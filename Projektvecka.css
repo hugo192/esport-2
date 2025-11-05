@@ -227,7 +227,11 @@ nav button{
     color: #333;
 }
 
-
+.close-btn{
+  width: 550px;
+  bottom: 20px;
+  color: black;
+}
  
   .et-hero-tab {
     display: flex;
