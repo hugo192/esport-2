@@ -195,7 +195,7 @@ nav button{
   .textbox-container {
     position: fixed;
     bottom: auto;
-    left: 50%;
+    right: 10%;
     transform: translateX(-50%);
     width: 600px;
     max-width: 90%;
