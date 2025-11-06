@@ -31,7 +31,7 @@ radial-gradient(1200px 600px at 85% 90%, var(--bg2), #000000);
 }
 
 .chip2{
-position: relative;
+position: fixed;
 right: 270px;
 top: 35px;
 }
