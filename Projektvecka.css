@@ -215,6 +215,7 @@ nav button{
     z-index: 1000;
 }
 
+
 .textbox-container.show {
     bottom: 20px;
 }
@@ -265,6 +266,10 @@ nav button{
     height: 6px;
     background: #66B1F1;
     transition: left 0.3s ease, width 0.3s ease;
+  }
+
+  video{
+    scale: 50px;
   }
  
   @media (min-width: 800px) {
