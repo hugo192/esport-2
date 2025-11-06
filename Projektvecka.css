@@ -22,7 +22,7 @@ radial-gradient(1200px 600px at 85% 90%, var(--bg2), #000000);
 }
 
 #logga{
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 20px;
   width: 80px;
@@ -31,7 +31,8 @@ radial-gradient(1200px 600px at 85% 90%, var(--bg2), #000000);
 }
 
 .chip2{
-right: 270px;
+position: absolute;
+right: -270px;
 top: 35px;
 }
 
@@ -53,8 +54,8 @@ button{
   table {
     width: 90%;
     margin: auto;
+    top: 20px;
     border-collapse: separate;
-    border-spacing: 20px;
   }
 
   h4{
@@ -108,16 +109,9 @@ button{
   0 10px 28px rgba(28, 28, 28, 0.6);
 }
 header, .title-wrap{
-<<<<<<< HEAD
-  text-align:center;
-  left: 50%;
-  transform: translate(-4%);
-  margin: 44px 0;
-=======
   position: absolute;
   left: 45.5%;         /* center the box on the page */
   margin: 24px 0;
->>>>>>> 3b7b016f7aa56f3f0dd248fddd472e05f93891f1
   z-index: 1000;
 }
 
