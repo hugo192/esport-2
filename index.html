@@ -21,7 +21,7 @@
 
   <table width="100%" cellpadding="20" cellspacing="20" border="0">
     <tr>
-      <td valign="top" align="center" width="33%" onclick="toggleTextbox()">
+      <td valign="top" align="center" width="33%" onclick="showPlayer('anton')">
         <a href="#">
           <img src="spelare1.jpg" alt="Bild 1" width="100%" style="display:block;">
         </a>
@@ -30,7 +30,7 @@
       </td>
 
 
-      <td valign="top" align="center" width="33%" onclick="toggleTextbox()">
+      <td valign="top" align="center" width="33%" onclick="showPlayer('alex')">
         <a href="#">
           <img src="Spelare2.jpg" alt="Bild 2" width="100%" style="display:block;">
         </a>
@@ -38,7 +38,7 @@
         <p>Roll: Duelist</p>
       </td>
 
-      <td valign="top" align="center" width="33%" onclick="toggleTextbox()">
+      <td valign="top" align="center" width="33%" onclick="showPlayer('helena')">
         <a href="#">
           <img src="Spelare3.jpg" alt="Bild 3" width="100%" style="display:block;">
         </a>
@@ -49,7 +49,7 @@
 
 
     <tr>
-      <td valign="top" align="center" width="33%" onclick="toggleTextbox()">
+      <td valign="top" align="center" width="33%" onclick="showPlayer('gizem')">
         <a href="#">
           <img src="Spelare4.jpg" alt="Bild 4" width="100%" style="display:block;">
         </a>
@@ -58,7 +58,7 @@
       </td>
 
 
-      <td valign="top" align="center" width="33%" onclick="toggleTextbox()">
+      <td valign="top" align="center" width="33%" onclick="showPlayer('samuel')">
         <a href="#">
           <img src="Spelare5.jpg" alt="Bild 5" width="100%" style="display:block;">
         </a>
@@ -67,7 +67,7 @@
       </td>
 
 
-      <td valign="top" align="center" width="33%" onclick="toggleTextbox()">
+      <td valign="top" align="center" width="33%" onclick="showPlayer('william')">
         <a href="#">
           <img src="Spelare6.jpg" alt="Bild 6" width="100%" style="display:block;">
         </a>
@@ -102,23 +102,95 @@ Detta är ett nytt kapitel för laget eftersom detta är deras första turnering
   </video>
 </div>
 
+<script>
+  const playerData = {
+    anton: {
+      name: "Anton / Antz",
+      role: "Controller (Smoker)",
+      bio: "Anton är lagets strategiska hjärna som Controller. Han specialiserar sig på att kontrollera spelplanen med röksystem och blocker som ger laget avgörande fördelar.",
+      strengths: ["Smoke placering", "Map kontroll", "Teamkoordination"],
+      playstyle: "Anton spelar metodiskt och tänker alltid två steg framåt. Hans förmåga att läsa motståndarna och placera perfekt timing på sina smokes gör honom ovärderlig för laget."
+    },
+    alex: {
+      name: "Alex / 240hz demon",
+      role: "Duelist",
+      bio: "Alex är lagets aggressiva entry fragger med otrolig aim och reflexer. Som 240hz demon är han känd för sina blixtrörliga reaktioner.",
+      strengths: ["Entry fragging", "Aim precision", "Aggressiv spelstil"],
+      playstyle: "Alex leder chargen in på bombsites med självsäker aggression. Hans höga refresh rate ger honom den edge som behövs för att vinna kritiska dueller."
+    },
+    helena: {
+      name: "Helena / radisbingbong",
+      role: "Sentinel",
+      bio: "Helena är lagets pålitliga försvarare som Sentinel. Hon är expert på att hålla sites och förhindra motståndare från att ta kontroll.",
+      strengths: ["Site defense", "Information gathering", "Clutch potential"],
+      playstyle: "Helena spelar smart defensivt och använder sina utilities för att samla information och fördröja pushes. Hon är mäster på att spela för tid och vinna 1vX situationer."
+    },
+    gizem: {
+      name: "Gizem / trashysw",
+      role: "Flex",
+      bio: "Gizem är lagets mest versatila spelare som kan anpassa sig till alla situationer. Som flex-spelare kan hon fylla vilken roll som helst.",
+      strengths: ["Versatilitet", "Anpassningsförmåga", "Support"],
+      playstyle: "Gizem kan växla mellan aggressivt och defensivt spel beroende på vad laget behöver. Hennes flexibilitet gör henne till en nyckelspelare i svåra situationer."
+    },
+    samuel: {
+      name: "Samuel / sampalainen",
+      role: "Duelist",
+      bio: "Samuel är den andra duelisten i laget med explosiv spelstil och fantastisk gamesense. Han och Alex bildar en dödlig duo.",
+      strengths: ["Aggressive peaks", "Trade fragging", "Movement"],
+      playstyle: "Samuel kompletterar Alex perfekt med sin förmåga att följa upp och trade frags. Hans movement är exceptionell och han kan ta space för laget med sin aggressiva spelstil."
+    },
+    william: {
+      name: "William / loopy",
+      role: "Sentinel (Chamber)",
+      bio: "William är lagets Chamber specialist och luksusskytteexperten. Hans precision med operatorn är legendarisk.",
+      strengths: ["Operator skills", "Positioning", "Ekonomi management"],
+      playstyle: "William spelar Chamber för att maximera sin sniper-förmåga. Han tar viktiga kontroll-positioner tidigt i rundan och kan både hålla och retrea effektivt tack vare Chambers kit."
+    }
+  };
+  
+  function showPlayer(playerKey) {
+    const player = playerData[playerKey];
+    const textbox = document.getElementById('textbox');
+    const overlay = document.getElementById('overlay');
+    const playerName = document.getElementById('playerName');
+    const playerContent = document.getElementById('playerContent');
+  
+    playerName.textContent = player.name;
+    
+    playerContent.innerHTML = `
+      <p><strong>Roll:</strong> ${player.role}</p>
+      <p style="margin-top: 15px;">${player.bio}</p>
+      
+      <h3>Styrkor</h3>
+      <ul>
+        ${player.strengths.map(strength => `<li>${strength}</li>`).join('')}
+      </ul>
+      
+      <h3>Spelstil</h3>
+      <p>${player.playstyle}</p>
+    `;
+  
+    textbox.classList.add('show');
+    overlay.classList.add('show');
+  }
+  
+  function closeTextbox() {
+    const textbox = document.getElementById('textbox');
+    const overlay = document.getElementById('overlay');
+    textbox.classList.remove('show');
+    overlay.classList.remove('show');
+  }
+  </script>
+<div class="textbox-overlay" id="overlay" onclick="closeTextbox()"></div>
+
 <div class="textbox-container" id="textbox">
     <div class="textbox-header">
-        <button class="close-btn" onclick="toggleTextbox()">Close</button>
+        <h2 id="playerName">Spelar Info</h2>
+        <button class="close-btn" onclick="closeTextbox()">Stäng</button>
+    </div>
+    <div class="textbox-content" id="playerContent">
+        <!-- Content will be inserted here -->
     </div>
 </div>
-
-<script>
-    function toggleTextbox() {
-        const textbox = document.getElementById('textbox');
-        textbox.classList.toggle('show');
-    }
-</script>
-
-<script>
-function scrollToId(id){
-const el = document.getElementById(id); if(!el) return; el.scrollIntoView({behavior:'smooth', block:'start'});
-}
-</script>
 </body>
 </html>
