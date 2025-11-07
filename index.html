@@ -105,46 +105,28 @@ Detta är ett nytt kapitel för laget eftersom detta är deras första turnering
 <script>
   const playerData = {
     anton: {
-      name: "Anton / Antz",
-      role: "Controller (Smoker)",
-      bio: "Anton är lagets strategiska hjärna som Controller. Han specialiserar sig på att kontrollera spelplanen med röksystem och blocker som ger laget avgörande fördelar.",
-      strengths: ["Smoke placering", "Map kontroll", "Teamkoordination"],
-      playstyle: "Anton spelar metodiskt och tänker alltid två steg framåt. Hans förmåga att läsa motståndarna och placera perfekt timing på sina smokes gör honom ovärderlig för laget."
+      namn: "Anton / Antz",
+      roll: "Controller(Smoker)"
     },
     alex: {
-      name: "Alex / 240hz demon",
-      role: "Duelist",
-      bio: "Alex är lagets aggressiva entry fragger med otrolig aim och reflexer. Som 240hz demon är han känd för sina blixtrörliga reaktioner.",
-      strengths: ["Entry fragging", "Aim precision", "Aggressiv spelstil"],
-      playstyle: "Alex leder chargen in på bombsites med självsäker aggression. Hans höga refresh rate ger honom den edge som behövs för att vinna kritiska dueller."
+      namn: "Alex / 240hz demon",
+      roll: "Duelist",
     },
     helena: {
-      name: "Helena / radisbingbong",
-      role: "Sentinel",
-      bio: "Helena är lagets pålitliga försvarare som Sentinel. Hon är expert på att hålla sites och förhindra motståndare från att ta kontroll.",
-      strengths: ["Site defense", "Information gathering", "Clutch potential"],
-      playstyle: "Helena spelar smart defensivt och använder sina utilities för att samla information och fördröja pushes. Hon är mäster på att spela för tid och vinna 1vX situationer."
+      namn: "Helena / radisbingbong",
+      roll: "Sentinel",
     },
     gizem: {
-      name: "Gizem / trashysw",
-      role: "Flex",
-      bio: "Gizem är lagets mest versatila spelare som kan anpassa sig till alla situationer. Som flex-spelare kan hon fylla vilken roll som helst.",
-      strengths: ["Versatilitet", "Anpassningsförmåga", "Support"],
-      playstyle: "Gizem kan växla mellan aggressivt och defensivt spel beroende på vad laget behöver. Hennes flexibilitet gör henne till en nyckelspelare i svåra situationer."
+      namn: "Gizem / trashysw",
+      roll: "Flex",
     },
     samuel: {
-      name: "Samuel / sampalainen",
-      role: "Duelist",
-      bio: "Samuel är den andra duelisten i laget med explosiv spelstil och fantastisk gamesense. Han och Alex bildar en dödlig duo.",
-      strengths: ["Aggressive peaks", "Trade fragging", "Movement"],
-      playstyle: "Samuel kompletterar Alex perfekt med sin förmåga att följa upp och trade frags. Hans movement är exceptionell och han kan ta space för laget med sin aggressiva spelstil."
+      namn: "Samuel / sampalainen",
+      roll: "Duelist",
     },
     william: {
-      name: "William / loopy",
-      role: "Sentinel (Chamber)",
-      bio: "William är lagets Chamber specialist och luksusskytteexperten. Hans precision med operatorn är legendarisk.",
-      strengths: ["Operator skills", "Positioning", "Ekonomi management"],
-      playstyle: "William spelar Chamber för att maximera sin sniper-förmåga. Han tar viktiga kontroll-positioner tidigt i rundan och kan både hålla och retrea effektivt tack vare Chambers kit."
+      namn: "William / loopy",
+      roll: "Sentinel(Chamber)",
     }
   };
   
@@ -158,16 +140,7 @@ Detta är ett nytt kapitel för laget eftersom detta är deras första turnering
     playerName.textContent = player.name;
     
     playerContent.innerHTML = `
-      <p><strong>Roll:</strong> ${player.role}</p>
-      <p style="margin-top: 15px;">${player.bio}</p>
-      
-      <h3>Styrkor</h3>
-      <ul>
-        ${player.strengths.map(strength => `<li>${strength}</li>`).join('')}
-      </ul>
-      
-      <h3>Spelstil</h3>
-      <p>${player.playstyle}</p>
+      <p><strong>Roll:</strong> ${player.roll}</p>
     `;
   
     textbox.classList.add('show');
@@ -180,6 +153,11 @@ Detta är ett nytt kapitel för laget eftersom detta är deras första turnering
     textbox.classList.remove('show');
     overlay.classList.remove('show');
   }
+  </script>
+  <script>
+    function scrollToId(id){
+      const el = document.getElementById(id); if(!el) return; el.scrollIntoView({behavior:'smooth', block:'start'});
+    }
   </script>
 <div class="textbox-overlay" id="overlay" onclick="closeTextbox()"></div>
 
